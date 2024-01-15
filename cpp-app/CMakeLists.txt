@@ -3,5 +3,5 @@ project(cpp_app)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cpp_app main.cpp)
-add_executable(cpp_test test.cpp)
+add_executable(main main.cpp mathz.cpp)
+add_executable(test test.cpp mathz.cpp)
