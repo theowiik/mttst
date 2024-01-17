@@ -5,7 +5,7 @@ root = "."
 
 # only those files that fully match the glob filter will be mutated.
 # glob filter are relative to root.
-include = ["*"]
+include = ["mathz.cpp"]
 exclude = []
 
 [generic]
@@ -18,7 +18,7 @@ mutants = ["lcr", "lcrb", "sdl", "uoi", "dcr"]
 [analyze]
 
 # glob filter which matched files (relative to root) to be used for static analysis information.
-include = ["*"]
+include = ["mathz.cpp"]
 exclude = []
 
 # number of threads to be used for analysis (default is the number of cores).
@@ -100,7 +100,7 @@ db = "dextool_mutate.sqlite3"
 [compiler]
 
 # extra flags to pass on to the compiler such as the C++ standard.
-# extra_flags = []
+extra_flags = [ "-D_POSIX_PATH_MAX=1024" ]
 
 # force system includes to use -I instead of -isystem
 # force_system_includes = false
@@ -115,7 +115,7 @@ db = "dextool_mutate.sqlite3"
 [compile_commands]
 
 # files and/or directories to look for compile_commands.json.
-search_paths = ["./compile_commands.json"]
+search_paths = ["./build/compile_commands.json"]
 
 # compile flags to remove when analyzing a file.
 # filter = ["-c", "-o", "-m", "-nodevicelib", "-Waddr-space-convert", "-non-static", "-Bstatic", "-Bdynamic", "-Xbind-lazy", "-Xbind-now", "-f", "-static", "-shared", "-rdynamic", "-s", "-l", "-L", "-z", "-u", "-T", "-Xlinker", "-l", "-MT", "-MF", "-MD", "-MQ", "-MMD", "-MP", "-MG", "-E", "-cc1", "-S", "-M", "-MM", "-###"]
@@ -126,12 +126,12 @@ search_paths = ["./compile_commands.json"]
 [mutant_test]
 
 # command to build the program **and** test suite.
-build_cmd = ["cd build && make -j12"]
+build_cmd = "./build.sh"
 
 # at least one of test_cmd_dir (recommended) or test_cmd needs to be specified.
 
 # path(s) to recursively look for test binaries to execute.
-test_cmd_dir = ["./build/test"]
+# test_cmd_dir = ["./build/test"]
 
 # how to scan test_cmd_dir
 # available options are: ["recursive", "shallow"]
@@ -145,7 +145,7 @@ test_cmd_dir = ["./build/test"]
 # 1. ["test1.sh", "test2.sh"]
 # 2. [["test1.sh", "-x"], "test2.sh"]
 # 3. [["/bin/make", "test"]]
-# test_cmd = ["./test.sh"]
+test_cmd = "./test.sh"
 
 # timeout to use for the test suite (by default a measurement-based heuristic will be used).
 # test_cmd_timeout = "1 hours 1 minutes 1 seconds 1 msecs"
@@ -158,7 +158,7 @@ test_cmd_dir = ["./build/test"]
 
 # built-in analyzer of output from testing frameworks to find failing test cases
 # available options are: ["gtest", "ctest", "makefile", "test_cmd"]
-analyze_using_builtin = ["test_cmd"]
+analyze_using_builtin = ["ctest"]
 
 # determine in what order mutants are chosen
 # available options are: "random" "consecutive" "bySize"

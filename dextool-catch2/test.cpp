@@ -33,3 +33,8 @@ TEST_CASE("Greater or Equal - Zero Values", "[greater_or_equal]") {
     Mathz m;
     REQUIRE(m.greater_or_equal(0, 0));
 }
+
+TEST_CASE("Add - 1 + 1 = 2", "[add]") {
+    Mathz m;
+    REQUIRE(m.add(1, 1) == 2);
+}
