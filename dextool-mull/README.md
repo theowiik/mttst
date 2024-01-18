@@ -1,10 +1,21 @@
 # Mutationg testing minimal demo
 
 - [Mutationg testing minimal demo](#mutationg-testing-minimal-demo)
+  - [Files from mutation testing tools](#files-from-mutation-testing-tools)
   - [dextool](#dextool)
     - [Build](#build)
     - [Known issues](#known-issues)
   - [mull](#mull)
+
+## Files from mutation testing tools
+
+- dextool
+  - `.dextool-mutate.toml`
+  - `dextool_template` (not actually needed)
+  - `build.sh`
+  - `install.sh`
+- mull
+  - `mull.yml`
 
 ## dextool
 
