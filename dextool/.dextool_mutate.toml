@@ -5,7 +5,7 @@ root = "."
 
 # only those files that fully match the glob filter will be mutated.
 # glob filter are relative to root.
-include = ["mathz.cpp"]
+include = ["./src/*"]
 exclude = []
 
 [generic]
@@ -13,12 +13,12 @@ exclude = []
 # default mutants to test if none is specified by --mutant
 # note that this affects the analyze phase thus the --mutant argument must be one of those specified here
 # available options are: ["all", "ror", "rorp", "lcr", "aor", "uoi", "sdl", "dcr", "lcrb", "aors", "cr"]
-mutants = ["lcr", "lcrb", "sdl", "uoi", "dcr"]
+mutants = ["ror"]
 
 [analyze]
 
 # glob filter which matched files (relative to root) to be used for static analysis information.
-include = ["mathz.cpp"]
+include = ["./src/*"]
 exclude = []
 
 # number of threads to be used for analysis (default is the number of cores).
@@ -30,7 +30,7 @@ prune = true
 # checksum the files in this directories and warn if a mutation status is older
 # than the newest file. The path can be a file or a directory. Directories
 # are traveresed. All paths are relative to root.
-# test_paths = ["test/suite1", "test/mytest.cpp"]
+# test_paths = ["test"]
 
 # glob filter which include/exclude matched test files (relative to root) from analysis.
 # test_include = ["*/*.ext"]
@@ -100,7 +100,7 @@ db = "dextool_mutate.sqlite3"
 [compiler]
 
 # extra flags to pass on to the compiler such as the C++ standard.
-extra_flags = [ "-D_POSIX_PATH_MAX=1024" ]
+# extra_flags = [ "-D_POSIX_PATH_MAX=1024" ]
 
 # force system includes to use -I instead of -isystem
 # force_system_includes = false

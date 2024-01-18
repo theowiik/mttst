@@ -1,7 +1,8 @@
 #define CATCH_CONFIG_MAIN
 
-#include "catch.hpp"
-#include "mathz.cpp"
+// Probably not good but whatevah
+#include "../catch.hpp"
+#include "../src/mathz.cpp"
 
 int theAnswer() { return 40 + 2; }
 
