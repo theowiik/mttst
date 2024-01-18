@@ -2,7 +2,7 @@
 
 - [Mutationg testing minimal demo](#mutationg-testing-minimal-demo)
   - [Files from mutation testing tools](#files-from-mutation-testing-tools)
-  - [dextool](#dextool)
+  - [dextool (work in progress)](#dextool-work-in-progress)
     - [Build](#build)
     - [Known issues](#known-issues)
   - [mull](#mull)
@@ -17,7 +17,7 @@
 - mull
   - `mull.yml`
 
-## dextool
+## dextool (work in progress)
 
 Mostly based on https://github.com/joakim-brannstrom/dextool/blob/master/plugin/mutate/README_tutorial.md
 
@@ -65,25 +65,20 @@ dextool mutate report --style html
 
 ## mull
 
-Using mull 14.
-
-Clean:
+(mull 14)
 
 ```bash
+# Clean
 rm -rf build
-```
 
-Build:
+# Build
 
-```bash
 mkdir build
 cd build
 cmake -DCMAKE_CXX_COMPILER=clang++ \
   -DCMAKE_CXX_FLAGS="-O0 -fexperimental-new-pass-manager -fpass-plugin=/usr/lib/mull-ir-frontend-14 -g -grecord-command-line -stdlib=libc++" \
   ..
 make
-```
 
-```
 mull-runner-14 ./unit_tests
 ```
