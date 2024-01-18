@@ -1,16 +1,16 @@
-# 🚩 = Changed from default
+# "🚩 <original value>"
 # Orignal values and comments can be seen in dextool_template
 
 [workarea]
 root = "."
-include = ["./src/*"]   # 🚩
+include = ["./src/*"]                               # 🚩 ["*"]
 exclude = []
 
 [generic]
-mutants = ["ror"]       # 🚩
+mutants = ["ror"]                                   # 🚩 ["lcr", "lcrb", "sdl", "uoi", "dcr"]
 
 [analyze]
-include = ["./src/*"]   # 🚩
+include = ["./src/*"]                               # 🚩 ["*"]
 exclude = []
 prune = true
 
@@ -28,12 +28,13 @@ db = "dextool_mutate.sqlite3"
 # ...
 
 [compile_commands]
-search_paths = ["./build/compile_commands.json"]
+search_paths = ["./build/compile_commands.json"]    # 🚩 ["./compile_commands.json"]
 
 [mutant_test]
-build_cmd = "./build.sh"                # 🚩
-test_cmd = "./test.sh"                  # 🚩
-analyze_using_builtin = ["ctest"]       # 🚩
+build_cmd = "./build.sh"                            # 🚩 ["cd build && make -j12"]
+# test_cmd_dir = ["./build/test"]                   # 🚩 NOT commented out
+test_cmd = "./test.sh"                              # 🚩 WAS commented out
+analyze_using_builtin = ["ctest"]                   # 🚩 ["test_cmd"]
 detected_new_test_case = "resetAlive"
 detected_dropped_test_case = "remove"
 oldest_mutants = "test"
