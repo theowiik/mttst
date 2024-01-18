@@ -2,6 +2,16 @@
 
 Mostly based on https://github.com/joakim-brannstrom/dextool/blob/master/plugin/mutate/README_tutorial.md
 
+### Build
+
+Clean:
+
+```bash
+rm -rf build
+rm -rf dextool_mutate.sqlite3
+rm -rf html
+```
+
 Build:
 
 ```bash
