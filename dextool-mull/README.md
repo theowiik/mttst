@@ -1,27 +1,32 @@
 # Mutationg testing minimal demo
 
 - [Mutationg testing minimal demo](#mutationg-testing-minimal-demo)
-  - [Files from mutation testing tools](#files-from-mutation-testing-tools)
   - [dextool (work in progress)](#dextool-work-in-progress)
+    - [Install](#install)
+    - [Files](#files)
     - [Build](#build)
     - [Known issues](#known-issues)
   - [mull](#mull)
-
-## Files from mutation testing tools
-
-- dextool
-  - `.dextool-mutate.toml`
-  - `dextool_template` (not actually needed)
-  - `build.sh`
-  - `install.sh`
-- mull
-  - `mull.yml`
+    - [Install](#install-1)
+    - [Files](#files-1)
+    - [Run](#run)
 
 ## dextool (work in progress)
 
-Mostly based on https://github.com/joakim-brannstrom/dextool/blob/master/plugin/mutate/README_tutorial.md
+### Install
+
+TODO
+
+### Files
+
+- `.dextool-mutate.toml`
+- `dextool_template` (not actually needed)
+- `build.sh`
+- `install.sh`
 
 ### Build
+
+Mostly based on https://github.com/joakim-brannstrom/dextool/blob/master/plugin/mutate/README_tutorial.md
 
 ```bash
 # Clean
@@ -68,6 +73,16 @@ dextool mutate report --style html
 ## mull
 
 (mull 14)
+
+### Install
+
+TODO
+
+### Files
+
+`mull.yml`
+
+### Run
 
 ```bash
 # Clean
