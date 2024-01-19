@@ -10,7 +10,7 @@ exclude = []
 mutants = ["ror"]                                   # 🚩 ["lcr", "lcrb", "sdl", "uoi", "dcr"]
 
 [analyze]
-# include = ["*"]                                   # NOT commented out
+include = ["src/*"]                                 # 🚩 ["*"]
 exclude = ["test/*"]                                # 🚩 []
 prune = true
 

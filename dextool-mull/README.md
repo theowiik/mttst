@@ -74,7 +74,6 @@ dextool mutate report --style html
 rm -rf build
 
 # Build
-
 mkdir build
 cd build
 cmake -DCMAKE_CXX_COMPILER=clang++ \
