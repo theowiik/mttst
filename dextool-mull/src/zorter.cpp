@@ -4,7 +4,7 @@
 class Zorter {
 public:
     static std::vector<int> sort(const std::vector<int> &arr) {
-        std::vector sorted(arr);
+        std::vector<int> sorted(arr);
 
         const int n = sorted.size();
         for (int i = 0; i < n - 1; i++) {

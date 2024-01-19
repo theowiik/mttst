@@ -23,39 +23,41 @@ Mostly based on https://github.com/joakim-brannstrom/dextool/blob/master/plugin/
 
 ### Build
 
-Clean:
-
 ```bash
+# Clean
 rm -rf build
 rm -rf dextool_mutate.sqlite3
 rm -rf html
-```
 
-Build:
-
-```bash
+# Build
 mkdir build
 cd build
 cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
 make
 popd
-```
 
-Generate mutatnts:
+# Generate mutants
+echo ""
+echo "--- Analyze mutants ---"
+echo ""
+sleep 1
 
-```
-dextool mutate analyze
-```
+dextool mutate analyze --threads 1
 
-Run tests:
+# Run tests
+echo ""
+echo "--- Run mutation tests ---"
+echo ""
+sleep 1
 
-```
 dextool mutate test
-```
 
-Generate report:
+# Generate report
+echo ""
+echo "--- Generate report ---"
+echo ""
+sleep 1
 
-```
 dextool mutate report --style html
 ```
 

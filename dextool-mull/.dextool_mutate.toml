@@ -3,15 +3,15 @@
 
 [workarea]
 root = "."
-include = ["./src/*"]                               # 🚩 ["*"]
+include = ["src/*"]                                 # 🚩 ["*"]
 exclude = []
 
 [generic]
 mutants = ["ror"]                                   # 🚩 ["lcr", "lcrb", "sdl", "uoi", "dcr"]
 
 [analyze]
-include = ["./src/*"]                               # 🚩 ["*"]
-exclude = []
+# include = ["*"]                                   # NOT commented out
+exclude = ["test/*"]                                # 🚩 []
 prune = true
 
 [schema]
