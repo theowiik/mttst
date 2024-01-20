@@ -3,14 +3,14 @@
 
 [workarea]
 root = "."
-include = ["src/*"]                                 # 🚩 ["*"]
+include = ["*"]                                     # 🚩 ["*"]
 exclude = []
 
 [generic]
-mutants = ["ror"]                                   # 🚩 ["lcr", "lcrb", "sdl", "uoi", "dcr"]
+mutants = ["all"]                                   # 🚩 ["lcr", "lcrb", "sdl", "uoi", "dcr"]
 
 [analyze]
-include = ["src/*"]                                 # 🚩 ["*"]
+include = ["src/mathz.cpp"]                         # 🚩 ["*"]
 exclude = ["test/*"]                                # 🚩 []
 prune = true
 

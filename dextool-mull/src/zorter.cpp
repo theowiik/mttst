@@ -1,18 +1,15 @@
-#include <vector>
-#include <algorithm>
-
 class Zorter {
 public:
-    static std::vector<int> sort(const std::vector<int> &arr) {
-        std::vector<int> sorted(arr);
-
-        const int n = sorted.size();
-        for (int i = 0; i < n - 1; i++) {
+    static void sort(int arr[], int size) {
+        for (int i = 0; i < size - 1; i++) {
             bool swapped = false;
 
-            for (int j = 0; j < n - i - 1; j++) {
-                if (sorted[j] > sorted[j + 1]) {
-                    std::swap(sorted[j], sorted[j + 1]);
+            for (int j = 0; j < size - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // Implementing swap logic
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                     swapped = true;
                 }
             }
@@ -20,6 +17,5 @@ public:
             if (!swapped)
                 break;
         }
-        return sorted;
     }
 };

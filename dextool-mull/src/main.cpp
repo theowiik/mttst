@@ -3,7 +3,8 @@
 #include "zorter.cpp"
 
 void sort_demo() {
-    const std::vector<int> arr = {5, 4, 3, 2, 1};
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int arr_size = sizeof(arr) / sizeof(arr[0]);
 
     std::cout << "Before sort: ";
     for (const int x : arr) {
@@ -11,9 +12,9 @@ void sort_demo() {
     }
     std::cout << std::endl;
 
-    const std::vector<int> sorted = Zorter::sort(arr);
+    Zorter::sort(arr, arr_size);
     std::cout << "After sort: ";
-    for (const int x : sorted) {
+    for (const int x : arr) {
         std::cout << x << " ";
     }
     std::cout << std::endl;

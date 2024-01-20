@@ -1,6 +1,7 @@
 # Mutationg testing minimal demo
 
 - [Mutationg testing minimal demo](#mutationg-testing-minimal-demo)
+  - [Run tests with ctest](#run-tests-with-ctest)
   - [dextool (work in progress)](#dextool-work-in-progress)
     - [Install](#install)
     - [Files](#files)
@@ -10,6 +11,17 @@
     - [Install](#install-1)
     - [Files](#files-1)
     - [Run](#run)
+
+## Run tests with ctest
+
+```bash
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make
+ctest --output-on-failure
+```
 
 ## dextool (work in progress)
 
