@@ -2,15 +2,15 @@
 
 - [Mutationg testing minimal demo](#mutationg-testing-minimal-demo)
   - [Run tests with ctest](#run-tests-with-ctest)
-  - [dextool (work in progress)](#dextool-work-in-progress)
+  - [mull](#mull)
     - [Install](#install)
     - [Files](#files)
-    - [Build](#build)
-    - [Known issues](#known-issues)
-  - [mull](#mull)
+    - [Run](#run)
+  - [dextool (not working 100%)](#dextool-not-working-100)
     - [Install](#install-1)
     - [Files](#files-1)
-    - [Run](#run)
+    - [Build](#build)
+    - [Known issues](#known-issues)
 
 ## Run tests with ctest
 
@@ -23,11 +23,40 @@ make
 ctest --output-on-failure
 ```
 
-## dextool (work in progress)
+## mull
+
+(mull 14)
 
 ### Install
 
-TODO
+https://mull.readthedocs.io/en/latest/Installation.html
+
+### Files
+
+`mull.yml`
+
+### Run
+
+```bash
+# Clean
+rm -rf build
+
+# Build
+mkdir build
+cd build
+cmake -DCMAKE_CXX_COMPILER=clang++ \
+  -DCMAKE_CXX_FLAGS="-O0 -fexperimental-new-pass-manager -fpass-plugin=/usr/lib/mull-ir-frontend-14 -g -grecord-command-line -stdlib=libc++" \
+  ..
+make
+
+mull-runner-14 ./unit_tests
+```
+
+## dextool (not working 100%)
+
+### Install
+
+https://github.com/joakim-brannstrom/dextool?tab=readme-ov-file#installation
 
 ### Files
 
@@ -59,42 +88,13 @@ dextool mutate analyze --threads 1
 
 # Run tests
 echo "--- Test ---"
-dextool mutate test
+dextool mutate test --debug
 
 # Generate report
 echo "--- Report ---"
-dextool mutate report --style html
+dextool mutate report --style html --debug
 ```
 
 ### Known issues
 
 - [ ] Only checks mathz.cpp
-
-## mull
-
-(mull 14)
-
-### Install
-
-TODO
-
-### Files
-
-`mull.yml`
-
-### Run
-
-```bash
-# Clean
-rm -rf build
-
-# Build
-mkdir build
-cd build
-cmake -DCMAKE_CXX_COMPILER=clang++ \
-  -DCMAKE_CXX_FLAGS="-O0 -fexperimental-new-pass-manager -fpass-plugin=/usr/lib/mull-ir-frontend-14 -g -grecord-command-line -stdlib=libc++" \
-  ..
-make
-
-mull-runner-14 ./unit_tests
-```
