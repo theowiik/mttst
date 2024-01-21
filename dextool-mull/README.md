@@ -54,27 +54,15 @@ make
 popd
 
 # Generate mutants
-echo ""
-echo "--- Analyze mutants ---"
-echo ""
-sleep 1
-
+echo "--- Analyze ---"
 dextool mutate analyze --threads 1
 
 # Run tests
-echo ""
-echo "--- Run mutation tests ---"
-echo ""
-sleep 1
-
+echo "--- Test ---"
 dextool mutate test
 
 # Generate report
-echo ""
-echo "--- Generate report ---"
-echo ""
-sleep 1
-
+echo "--- Report ---"
 dextool mutate report --style html
 ```
 
