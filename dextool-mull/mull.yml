@@ -15,8 +15,8 @@ mutators:
   - cxx_init_const
   - cxx_le_to_gt
   - cxx_le_to_lt
-  - cxx_logical_and_to_or
-  - cxx_logical_or_to_and
+#  - cxx_logical_and_to_or
+#  - cxx_logical_or_to_and
   - cxx_lshift_assign_to_rshift_assign
   - cxx_lshift_to_rshift
   - cxx_lt_to_ge
@@ -46,3 +46,5 @@ mutators:
   - scalar_value_mutator
 excludePaths:
   - .*/test/.*
+debug:
+  slowIRVerification: true

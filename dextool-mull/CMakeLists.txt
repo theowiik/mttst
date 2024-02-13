@@ -8,16 +8,30 @@ add_executable(
         src/main.cpp
         src/mathz.cpp
         src/zorter.cpp
+        src/geometry.cpp
 )
 
 add_executable(
-        unit_tests
+        unit_test_mathz
         test/test_mathz.cpp
-        test/test_zorter.cpp
         src/mathz.cpp
+)
+
+add_executable(
+        unit_test_zorter
+        test/test_zorter.cpp
         src/zorter.cpp
+)
+
+add_executable(
+        unit_test_geometry
+        test/test_geometry.cpp
+        src/geometry.cpp
+        src/mathz.cpp
 )
 
 # Enable testing with CTest
 enable_testing()
-add_test(NAME UnitTests COMMAND unit_tests)
+add_test(NAME unit_test_mathz COMMAND unit_test_mathz)
+add_test(NAME unit_test_zorter COMMAND unit_test_zorter)
+add_test(NAME unit_test_geometry COMMAND unit_test_geometry)

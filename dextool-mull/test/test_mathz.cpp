@@ -24,3 +24,18 @@ TEST_CASE("Add - 1 + 1 = 2", "[add]") {
     Mathz m;
     REQUIRE(m.add(1, 1) == 2);
 }
+
+TEST_CASE("Multiply - 5 * 2 = 10", "[multiply]") {
+    Mathz m;
+    REQUIRE(m.multiply(5, 2) == 10);
+}
+
+TEST_CASE("Divide - 20 / 5 = 4", "[divide]") {
+    Mathz m;
+    REQUIRE(m.divide(20, 5) == 4);
+}
+
+TEST_CASE("Divide by 0 - 20 / 0 = Exception", "[divide]") {
+    Mathz m;
+    REQUIRE_THROWS(m.divide(20, 0));
+}
