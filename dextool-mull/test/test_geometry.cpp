@@ -16,8 +16,14 @@ TEST_CASE("Rectangle area equivalent", "[same_rectangle_area]")
     REQUIRE(gm.same_rectangle_area(10, 5, 5, 10));
 }
 
-TEST_CASE("Rectangle area equivalent", "[same_rectangle_area]")
+TEST_CASE("Rectangle area not equivalent", "[same_rectangle_area]")
 {
     auto gm = Geometry();
     REQUIRE(!gm.same_rectangle_area(10, 4, 5, 10));
+}
+
+TEST_CASE("Square perimeter", "[square_perimeter]")
+{
+    auto gm = Geometry();
+    REQUIRE(gm.square_perimeter(10) == 40);
 }

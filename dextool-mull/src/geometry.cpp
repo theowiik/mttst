@@ -28,4 +28,10 @@ public:
 
         return m.greater_or_equal(r1_area, r2_area) && m.less_or_equal(r1_area, r2_area);
     }
+
+    static double square_perimeter(const double side_length)
+    {
+        auto m = Mathz();
+        return m.add(m.add(side_length, side_length), m.add(side_length, side_length));
+    }
 };
