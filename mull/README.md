@@ -1,13 +1,20 @@
-# Mutationg testing minimal demo
+- [Setup](#setup)
+  - [Requirements](#requirements)
+  - [Install](#install)
+- [Run Unit Tests](#run-unit-tests)
+- [Run Mutation Testing](#run-mutation-testing)
 
-- [Mutationg testing minimal demo](#mutationg-testing-minimal-demo)
-  - [Run tests with ctest](#run-tests-with-ctest)
-  - [mull](#mull)
-    - [Install](#install)
-    - [Files](#files)
-    - [Run](#run)
+## Setup
 
-## Run tests with ctest
+### Requirements
+
+- Mull 14
+
+### Install
+
+https://mull.readthedocs.io/en/latest/Installation.html
+
+## Run Unit Tests
 
 ```bash
 rm -rf build
@@ -18,19 +25,7 @@ make
 ctest --output-on-failure
 ```
 
-## mull
-
-(mull 14)
-
-### Install
-
-https://mull.readthedocs.io/en/latest/Installation.html
-
-### Files
-
-`mull.yml`
-
-### Run
+## Run Mutation Testing
 
 ```bash
 # Clean
