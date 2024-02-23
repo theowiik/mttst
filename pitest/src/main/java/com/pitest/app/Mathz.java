@@ -6,7 +6,7 @@ public class Mathz
         return a + b;
     }
 
-    public boolean greater_or_equal(int a, int b) {
+    public boolean greaterOrEqual(int a, int b) {
         return a >= b;
     }
 }
