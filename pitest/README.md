@@ -7,3 +7,11 @@
 `sdk install java` (21)
 
 `sdk install maven`
+
+### Run unit tests
+
+`mvn test`
+
+### Run mutation tests
+
+`...`
