@@ -1,4 +1,4 @@
-namespace stryker;
+namespace MathzApp;
 
 public class Mathz
 {
