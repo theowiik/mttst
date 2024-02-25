@@ -18,7 +18,7 @@
 
 ## Run Unit Tests
 
-`echo "testing"`
+`python -m unittest discover -s test`
 
 ## Run Mutation Testing
 

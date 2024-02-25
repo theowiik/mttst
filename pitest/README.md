@@ -28,3 +28,7 @@
 > "This will output an html report to `target/pit-reports/YYYYMMDDHHMI`."
 
 (https://pitest.org/quickstart/maven/)
+
+## Run App
+
+`mvn run`

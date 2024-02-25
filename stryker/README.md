@@ -18,8 +18,12 @@ Add dotnet cli to path: `export PATH="$PATH:$HOME/.dotnet"`
 
 ## Run Unit Tests
 
-`echo "testing"`
+`dotnet test`
 
 ## Run Mutation Testing
 
 `echo "mutation testing"`
+
+## Run App
+
+`dotnet run --project .\src\MathzApp\MathzApp.csproj`
