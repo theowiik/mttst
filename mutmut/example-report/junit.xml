@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="7" tests="9" time="0.0">
+	<testsuite disabled="0" errors="0" failures="7" name="mutmut" skipped="0" tests="9" time="0">
+		<testcase name="Mutant #1" file="src/mathz.py" line="3">
+			<system-out>        return a + b</system-out>
+		</testcase>
+		<testcase name="Mutant #2" file="src/mathz.py" line="6">
+			<failure type="failure" message="bad_survived">--- src/mathz.py
++++ src/mathz.py
+@@ -3,7 +3,7 @@
+         return a + b
+ 
+     def subtract(self, a, b):
+-        return a - b
++        return a + b
+ 
+     def multiply(self, a, b):
+         return a * b
+</failure>
+			<system-out>        return a - b</system-out>
+		</testcase>
+		<testcase name="Mutant #3" file="src/mathz.py" line="9">
+			<failure type="failure" message="bad_survived">--- src/mathz.py
++++ src/mathz.py
+@@ -6,7 +6,7 @@
+         return a - b
+ 
+     def multiply(self, a, b):
+-        return a * b
++        return a / b
+ 
+     def divide(self, a, b):
+         return a / b
+</failure>
+			<system-out>        return a * b</system-out>
+		</testcase>
+		<testcase name="Mutant #4" file="src/mathz.py" line="12">
+			<failure type="failure" message="bad_survived">--- src/mathz.py
++++ src/mathz.py
+@@ -9,7 +9,7 @@
+         return a * b
+ 
+     def divide(self, a, b):
+-        return a / b
++        return a * b
+ 
+     def less_or_equal(self, a, b):
+         return a &lt;= b
+</failure>
+			<system-out>        return a / b</system-out>
+		</testcase>
+		<testcase name="Mutant #5" file="src/mathz.py" line="15">
+			<system-out>        return a &lt;= b</system-out>
+		</testcase>
+		<testcase name="Mutant #6" file="src/main.py" line="3">
+			<failure type="failure" message="bad_survived">--- src/main.py
++++ src/main.py
+@@ -1,5 +1,5 @@
+ from mathz import Mathz
+ 
+-m = Mathz()
++m = None
+ print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)
+ 
+</failure>
+			<system-out>m = Mathz()</system-out>
+		</testcase>
+		<testcase name="Mutant #7" file="src/main.py" line="4">
+			<failure type="failure" message="bad_survived">--- src/main.py
++++ src/main.py
+@@ -1,5 +1,5 @@
+ from mathz import Mathz
+ 
+ m = Mathz()
+-print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)
++print(f&quot;99 + 1 = {m.add(100, 1)}&quot;)
+ 
+</failure>
+			<system-out>print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)</system-out>
+		</testcase>
+		<testcase name="Mutant #8" file="src/main.py" line="4">
+			<failure type="failure" message="bad_survived">--- src/main.py
++++ src/main.py
+@@ -1,5 +1,5 @@
+ from mathz import Mathz
+ 
+ m = Mathz()
+-print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)
++print(f&quot;99 + 1 = {m.add(99, 2)}&quot;)
+ 
+</failure>
+			<system-out>print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)</system-out>
+		</testcase>
+		<testcase name="Mutant #9" file="src/main.py" line="4">
+			<failure type="failure" message="bad_survived">--- src/main.py
++++ src/main.py
+@@ -1,5 +1,5 @@
+ from mathz import Mathz
+ 
+ m = Mathz()
+-print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)
++print(f&quot;XX99 + 1 = {m.add(99, 1)}XX&quot;)
+ 
+</failure>
+			<system-out>print(f&quot;99 + 1 = {m.add(99, 1)}&quot;)</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>
+
