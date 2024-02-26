@@ -4,7 +4,7 @@
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
 - [Run App](#run-app)
-- [Reports](#reports)
+- [Reporters](#reporters)
   - [HTML](#html)
 
 ## Setup
@@ -33,7 +33,7 @@ Add dotnet cli to path: `export PATH="$PATH:$HOME/.dotnet"` \
 
 `dotnet run --project .\src\MathzApp\MathzApp.csproj`
 
-## Reports
+## Reporters
 
 Stryker Mutator has support for multiple reporters, see https://stryker-mutator.io/docs/stryker-net/reporters/
 

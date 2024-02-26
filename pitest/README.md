@@ -4,7 +4,7 @@
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
 - [Run App](#run-app)
-- [Reports](#reports)
+- [Reporters](#reporters)
   - [HTML](#html)
   - [CSV](#csv)
   - [XML](#xml)
@@ -38,7 +38,7 @@
 
 `mvn run`
 
-## Reports
+## Reporters
 
 Set with `outputFormats` https://pitest.org/quickstart/maven/
 

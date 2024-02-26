@@ -4,7 +4,7 @@
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
 - [Run App (optional)](#run-app-optional)
-- [Reports](#reports)
+- [Reporters](#reporters)
   - [Specific reporter example...](#specific-reporter-example)
 
 ## Setup
@@ -31,7 +31,7 @@
 
 `echo "run app"`
 
-## Reports
+## Reporters
 
 Set with `x`
 

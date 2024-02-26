@@ -4,7 +4,7 @@
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
 - [Run App](#run-app)
-- [Reports](#reports)
+- [Reporters](#reporters)
   - [Propriatary CLI](#propriatary-cli)
   - [HTML](#html)
   - [junitxml](#junitxml)
@@ -34,7 +34,7 @@ https://github.com/boxed/mutmut
 
 `python main.py`
 
-## Reports
+## Reporters
 
 https://github.com/boxed/mutmut
 

@@ -3,7 +3,7 @@
   - [Install](#install)
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
-- [Reports](#reports)
+- [Reporters](#reporters)
 
 ## Setup
 
@@ -43,7 +43,7 @@ make
 mull-runner-14 ./unit_tests
 ```
 
-## Reports
+## Reporters
 
 https://mull.readthedocs.io/en/0.21.0/command-line/mull-runner.html
 
