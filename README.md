@@ -1,9 +1,5 @@
 # Mutation Testing Demo
 
-## TODO
+Minimum demos for industry standard mutation testing tools.
 
-- [ ] Summarize reports
-  - [ ] mull
-  - [x] pitest
-  - [x] mutmut
-  - [x] stryker mutator
+Each directory explains how to run every project and which reporters are available following [this template](template.md).

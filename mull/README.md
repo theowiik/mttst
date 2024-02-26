@@ -3,6 +3,7 @@
   - [Install](#install)
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
+- [Reports](#reports)
 
 ## Setup
 
@@ -41,3 +42,21 @@ make
 
 mull-runner-14 ./unit_tests
 ```
+
+## Reports
+
+https://mull.readthedocs.io/en/0.21.0/command-line/mull-runner.html
+
+Set with `--reporters <reporter here>`
+
+- IDE
+  - "Prints compiler-like warnings into stdout"
+- SQLite
+  - Saves results into an SQLite database
+- Elements (<- *Uses Stryker Dashboard for HTML*)
+  - Generates mutation-testing-elements compatible JSON file
+- Patches
+  - Generates patch file for each mutation
+- GithubAnnotations
+  - Print GithubAnnotations for mutants
+
