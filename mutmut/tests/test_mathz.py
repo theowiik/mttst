@@ -1,5 +1,5 @@
 import unittest
-from mathz import Mathz
+from src.mathz import Mathz
 
 
 class TestMathz(unittest.TestCase):
