@@ -5,5 +5,5 @@
 - [ ] Summarize reports
   - [ ] mull
   - [x] pitest
-  - [ ] mutmut
-  - [ ] stryker mutator
+  - [x] mutmut
+  - [x] stryker mutator

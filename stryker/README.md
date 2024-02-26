@@ -4,6 +4,8 @@
 - [Run Unit Tests](#run-unit-tests)
 - [Run Mutation Testing](#run-mutation-testing)
 - [Run App](#run-app)
+- [Reports](#reports)
+  - [HTML](#html)
 
 ## Setup
 
@@ -30,3 +32,25 @@ Add dotnet cli to path: `export PATH="$PATH:$HOME/.dotnet"` \
 ## Run App
 
 `dotnet run --project .\src\MathzApp\MathzApp.csproj`
+
+## Reports
+
+Stryker Mutator has support for multiple reporters, see https://stryker-mutator.io/docs/stryker-net/reporters/
+
+- HTML
+- Progress Reporter (is not actually a reporter, shows progress)
+- Dashboard reporter (uploads HTML to Stryker Dashboard https://dashboard.stryker-mutator.io/)
+- Cleartext reporter
+- Cleartext tree repoerter
+- Dots reporter
+- Json reporter
+- Markdown summary reporter
+- Mutation Testing Summary
+
+### HTML
+
+See files in `example-report` ([link](example-report/2024-02-26.15-00-36/reports/mutation-report.html))
+
+![](readme/html.png)
+
+![](readme/html_file.png)

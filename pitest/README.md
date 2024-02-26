@@ -60,4 +60,4 @@ See files in `example-report` ([link](example-report/pit-reports/mutations.csv))
 
 ### XML
 
-See files in `example-report`.
+See files in `example-report` ([link](example-report/pit-reports/mutations.xml))

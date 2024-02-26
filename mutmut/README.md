@@ -26,7 +26,7 @@
 
 ## Run Mutation Testing
 
-https://pypi.org/project/mutmut/
+https://github.com/boxed/mutmut
 
 `mutmut run`
 
@@ -35,6 +35,8 @@ https://pypi.org/project/mutmut/
 `python main.py`
 
 ## Reports
+
+https://github.com/boxed/mutmut
 
 ### Propriatary CLI
 
