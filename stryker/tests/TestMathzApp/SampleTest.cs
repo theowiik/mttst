@@ -1,10 +1,10 @@
 namespace TestMathzApp;
 
-public class UnitTest1
+public class SampleTest
 {
     [Fact]
     public void Test1()
     {
-
+        Assert.Equal(true, true);
     }
 }
