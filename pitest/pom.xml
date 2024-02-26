@@ -79,6 +79,19 @@
           <groupId>org.pitest</groupId>
           <artifactId>pitest-maven</artifactId>
           <version>LATEST</version>
+
+          <configuration>
+            <mutators>
+              <mutator>ALL</mutator>
+            </mutators>
+
+            <outputFormats>
+              <outputFormat>XML</outputFormat>
+              <outputFormat>CSV</outputFormat>
+              <outputFormat>HTML</outputFormat>
+            </outputFormats>
+          </configuration>
+
         </plugin>
       </plugins>
     </pluginManagement>

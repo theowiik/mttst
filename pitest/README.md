@@ -1,8 +1,13 @@
 - [Setup](#setup)
   - [Requirements](#requirements)
   - [Install](#install)
-- [Run unit tests](#run-unit-tests)
-- [Run mutation tests](#run-mutation-tests)
+- [Run Unit Tests](#run-unit-tests)
+- [Run Mutation Testing](#run-mutation-testing)
+- [Run App](#run-app)
+- [Reports](#reports)
+  - [HTML](#html)
+  - [CSV](#csv)
+  - [XML](#xml)
 
 ## Setup
 
@@ -17,11 +22,11 @@
 `sdk install java` \
 `sdk install maven`
 
-## Run unit tests
+## Run Unit Tests
 
 `mvn test`
 
-## Run mutation tests
+## Run Mutation Testing
 
 `mvn test-compile org.pitest:pitest-maven:mutationCoverage`
 
@@ -32,3 +37,27 @@
 ## Run App
 
 `mvn run`
+
+## Reports
+
+Set with `outputFormats` https://pitest.org/quickstart/maven/
+
+- HTML
+- XML
+- CSV.
+
+### HTML
+
+Stryker-like dashboard
+
+![](readme/html.png)
+
+![](readme/html-file.png)
+
+### CSV
+
+See files in `example-report`.
+
+### XML
+
+See files in `example-report`.

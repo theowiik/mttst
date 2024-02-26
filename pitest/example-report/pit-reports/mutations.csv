@@ -1,0 +1,15 @@
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.MathMutator,add,6,KILLED,com.pitest.app.MathzTest.shouldAddCorrectly(com.pitest.app.MathzTest)
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator,add,6,KILLED,com.pitest.app.MathzTest.shouldAddCorrectly(com.pitest.app.MathzTest)
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator,greaterOrEqual,10,NO_COVERAGE,none
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,greaterOrEqual,10,NO_COVERAGE,none
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,greaterOrEqual,10,NO_COVERAGE,none
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator,greaterOrEqual,10,NO_COVERAGE,none
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE,greaterOrEqual,10,NO_COVERAGE,none
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_IF,greaterOrEqual,10,NO_COVERAGE,none
+Mathz.java,com.pitest.app.Mathz,org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator,greaterOrEqual,10,NO_COVERAGE,none
+App.java,com.pitest.app.App,org.pitest.mutationtest.engine.gregor.mutators.ConstructorCallMutator,main,11,NO_COVERAGE,none
+App.java,com.pitest.app.App,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,main,12,NO_COVERAGE,none
+App.java,com.pitest.app.App,org.pitest.mutationtest.engine.gregor.mutators.InlineConstantMutator,main,12,NO_COVERAGE,none
+App.java,com.pitest.app.App,org.pitest.mutationtest.engine.gregor.mutators.NonVoidMethodCallMutator,main,12,NO_COVERAGE,none
+App.java,com.pitest.app.App,org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator,main,12,NO_COVERAGE,none
+App.java,com.pitest.app.App,org.pitest.mutationtest.engine.gregor.mutators.experimental.ArgumentPropagationMutator,main,12,NO_COVERAGE,none
