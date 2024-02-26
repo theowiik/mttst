@@ -8,13 +8,11 @@
 
 ### Requirements
 
-- x
-- y
-- z
+- Python 3.8+
 
 ### Install
 
-`echo "install"`
+`pip install -r requirements.txt`
 
 ## Run Unit Tests
 
@@ -24,6 +22,6 @@
 
 `echo "mutation testing"`
 
-## Run App (optional)
+## Run App
 
-`echo "run app"`
+`python main.py`
