@@ -1,14 +1,35 @@
 namespace MathLib;
 
-public class Mathz
+using System;
+
+public class Vector
 {
-    public int Add(int a, int b)
+    public double X { get; }
+    public double Y { get; }
+
+    public Vector(double x, double y)
     {
-        return a + b;
+        X = x;
+        Y = y;
     }
 
-    public bool GreaterOrEqual(int a, int b)
+    public Vector Add(Vector other)
     {
-        return a >= b;
+        return new Vector(X + other.X, Y + other.Y);
+    }
+
+    public Vector Subtract(Vector other)
+    {
+        return new Vector(X - other.X, Y - other.Y);
+    }
+
+    public double Magnitude()
+    {
+        return Math.Sqrt(X * X + Y * Y);
+    }
+
+    public override string ToString()
+    {
+        return $"({X}, {Y})";
     }
 }
