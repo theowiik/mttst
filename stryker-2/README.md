@@ -49,8 +49,4 @@ Stryker Mutator has support for multiple reporters, see https://stryker-mutator.
 
 ### HTML
 
-See files in `example-report` ([link](example-report/2024-02-26.15-00-36/reports/mutation-report.html))
-
-![](readme/html.png)
-
-![](readme/html_file.png)
+See files in `example-report` ([link](example-report/mutation-report.html))

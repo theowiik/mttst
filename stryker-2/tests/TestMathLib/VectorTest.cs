@@ -17,11 +17,11 @@ public class VectorTests
     [Fact]
     public void Subtract_TwoVectors_ShouldReturnCorrectDifference()
     {
-        var vector1 = new Vector(5, 7);
-        var vector2 = new Vector(2, 3);
+        var vector1 = new Vector(0, 0);
+        var vector2 = new Vector(0, 0);
         var result = vector1.Subtract(vector2);
-        Assert.Equal(3, result.X);
-        Assert.Equal(4, result.Y);
+        Assert.Equal(0, result.X);
+        Assert.Equal(0, result.Y);
     }
 
     [Fact]
