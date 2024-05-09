@@ -31,7 +31,7 @@ Add dotnet cli to path: `export PATH="$PATH:$HOME/.dotnet"` \
 
 ## Run App
 
-`dotnet run --project .\src\MathzApp\MathzApp.csproj`
+`dotnet run --project .\src\MathLib\MathLib.csproj`
 
 ## Reporters
 

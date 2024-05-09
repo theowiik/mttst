@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E3A8382-954A-4B8F-9CE5-BB12B17ECAE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathzApp", "src\MathzApp\MathzApp.csproj", "{443FCF2D-69BB-4842-BB0C-383DD6787AE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "src\MathLib\MathLib.csproj", "{443FCF2D-69BB-4842-BB0C-383DD6787AE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F611B600-5B41-4E38-9BEF-B5D46FA16497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMathzApp", "tests\TestMathzApp\TestMathzApp.csproj", "{27C4301E-2C56-463B-8AA7-69D634BB1F03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMathLib", "tests\TestMathLib\TestMathLib.csproj", "{27C4301E-2C56-463B-8AA7-69D634BB1F03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

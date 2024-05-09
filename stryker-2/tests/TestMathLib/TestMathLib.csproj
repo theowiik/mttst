@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../src/MathzApp/MathzApp.csproj" />
+    <ProjectReference Include="../../src/MathLib/MathLib.csproj" />
   </ItemGroup>
   
 </Project>
